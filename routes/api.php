@@ -23,13 +23,16 @@ use App\Http\Controllers\OrdemServico\ProdutoController;
 use App\Http\Controllers\OrdemServico\TimeLineController;
 use App\Http\Controllers\PrestadorServico\AgendamentoController;
 use App\Http\Controllers\PrestadorServico\PrestadorServicoController;
+use App\Http\Controllers\SenhaController;
 
 //logar no sistema
 Route::post('prelogin', [LoginController::class, 'prelogin'])->name('auth.prelogin');
 Route::post('login', [LoginController::class, 'login'])->name('auth.login');
 
-//anexar arquivos
-Route::get('getDados/{id}', [OrdemServicoController::class, 'getDados'])->name('api.ordem_servico.getDados');
+//getSenhas
+Route::get('senhas/{id}', [SenhaController::class, 'getSenha'])->name('api.senha.getSenha');
+Route::post('senhas/cadastrar', [SenhaController::class, 'cadastrar'])->name('api.senha.cadastrar');
+Route::post('senhas/atualizar', [SenhaController::class, 'atualizar'])->name('api.senha.atualizar');
 Route::post('anexar/arquivos/{id}', [ArquivoController::class, 'anexarArquivos'])->name('api.arquivo.anexarArquivos');
 // assinatura tecnico e cliente
 Route::get('/orcamento/getDados/{id}', [OrcamentoController::class, 'getDados'])->name('api.ordem_servico.getDados');
