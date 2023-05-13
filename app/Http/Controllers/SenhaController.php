@@ -22,12 +22,26 @@ class SenhaController extends Controller
         }else {
             $senha2 = 0;
         }
-
-        if($request['categoria'] == 'FEMININO') {
-            $valor = 100;
-        }else {
-            $valor = 500;
+        //VALORES CATEGORIA BARONESA
+        if ($request['idVaquejada'] == 68) {
+            if($request['categoria'] == 'FEMININO') {
+                $valor = 100;
+            }else {
+                $valor = 500;
+            }
         }
+
+        //VALORES CATEGORIA SAO PEDRO
+        if ($request['idVaquejada'] == 32) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 700;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 500;
+            }
+        }
+
 
         if(!$request['desconto']){
             $request['desconto'] = 0;
@@ -82,10 +96,24 @@ class SenhaController extends Controller
             $senha2 = 0;
         }
 
-        if($request['categoria'] == 'FEMININO') {
-            $valor = 100;
-        }else {
-            $valor = 500;
+        //VALORES CATEGORIA BARONESA
+        if ($request['idVaquejada'] == 68) {
+            if($request['categoria'] == 'FEMININO') {
+                $valor = 100;
+            }else {
+                $valor = 500;
+            }
+        }
+
+        //VALORES CATEGORIA SAO PEDRO
+        if ($request['idVaquejada'] == 32) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 700;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 500;
+            }
         }
 
         if(!$request['desconto']){
@@ -93,8 +121,6 @@ class SenhaController extends Controller
         }else {
             $valor = $valor - $request['desconto'];
         }
-
-
 
         if($request['acrescimo'] > 0) {
             $valor = $valor + $request['acrescimo'];
