@@ -32,7 +32,7 @@ class SenhaController extends Controller
         }
 
         //VALORES CATEGORIA SAO PEDRO
-        if ($request['idVaquejada'] == 32) {
+        if ($request['idVaquejada'] == 62) {
             if($request['categoria'] == 'PROFISSIONAL') {
                 $valor = 700;
             }else if ($request['categoria'] == 'ASPIRANTE') {
@@ -106,7 +106,7 @@ class SenhaController extends Controller
         }
 
         //VALORES CATEGORIA SAO PEDRO
-        if ($request['idVaquejada'] == 32) {
+        if ($request['idVaquejada'] == 62) {
             if($request['categoria'] == 'PROFISSIONAL') {
                 $valor = 700;
             }else if ($request['categoria'] == 'ASPIRANTE') {
