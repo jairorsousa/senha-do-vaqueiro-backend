@@ -16,12 +16,20 @@ class SenhaController extends Controller
     }
     public function cadastrar(Request $request)
     {
-        $s = explode('-', $request['senha']);
-        if($s[1]){
-            $senha2 = $s[1];
-        }else {
-            $senha2 = 0;
+        $pos = strpos( $request['senha'], '-' );
+
+        if ($pos === false) {
+            $s[0] = $request['senha'];
+            $senha2 = '';
+        } else {
+            $s = explode('-', $request['senha']);
+            if($s[1]){
+                $senha2 = $s[1];
+            }else {
+                $senha2 = '';
+            }
         }
+
         //VALORES CATEGORIA BARONESA
         if ($request['idVaquejada'] == 68) {
             if($request['categoria'] == 'FEMININO') {
@@ -42,14 +50,24 @@ class SenhaController extends Controller
             }
         }
 
+        //VALORES CATEGORIA LUIZ GONZAGA
+        if ($request['idVaquejada'] == 67) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 900;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 750;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 200;
+            }
+        }
 
         if(!$request['desconto']){
             $request['desconto'] = 0;
         }else {
             $valor = $valor - $request['desconto'];
         }
-
-
 
         if($request['acrescimo'] > 0) {
             $valor = $valor + $request['acrescimo'];
@@ -77,7 +95,7 @@ class SenhaController extends Controller
             'obs' => $request['obs'],
             'acrescimo' => $request['acrescimo'],
             'boitv' => $request['boitv'],
-            'dia' => '',
+            'dia' => $request['dia'],
             'valor' => $valor,
             'dataCadastro' => date('Y-m-d H:m:s'),
             'imprimiu' => '',
@@ -89,11 +107,18 @@ class SenhaController extends Controller
 
     public function atualizar(Request $request)
     {
-        $s = explode('-', $request['senha']);
-        if($s[1]){
-            $senha2 = $s[1];
-        }else {
-            $senha2 = 0;
+        $pos = strpos( $request['senha'], '-' );
+
+        if ($pos === false) {
+            $s[0] = $request['senha'];
+            $senha2 = '';
+        } else {
+            $s = explode('-', $request['senha']);
+            if($s[1]){
+                $senha2 = $s[1];
+            }else {
+                $senha2 = '';
+            }
         }
 
         //VALORES CATEGORIA BARONESA
@@ -113,6 +138,19 @@ class SenhaController extends Controller
                 $valor = 300;
             }else if ($request['categoria'] == 'AMADOR') {
                 $valor = 500;
+            }
+        }
+
+        //VALORES CATEGORIA LUIZ GONZAGA
+        if ($request['idVaquejada'] == 67) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 900;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 750;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 200;
             }
         }
 
@@ -148,7 +186,7 @@ class SenhaController extends Controller
             'obs' => $request['obs'],
             'acrescimo' => $request['acrescimo'],
             'boitv' => $request['boitv'],
-            'dia' => '',
+            'dia' => $request['dia'],
             'valor' => $valor,
             'dataCadastro' => date('Y-m-d H:m:s'),
             'imprimiu' => '',
