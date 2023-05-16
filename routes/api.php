@@ -31,6 +31,7 @@ Route::post('login', [LoginController::class, 'login'])->name('auth.login');
 
 //getSenhas
 Route::get('senhas/{id}', [SenhaController::class, 'getSenha'])->name('api.senha.getSenha');
+Route::get('senhas/importacao/{id}', [SenhaController::class, 'importacao'])->name('api.senha.importacao');
 Route::post('senhas/cadastrar', [SenhaController::class, 'cadastrar'])->name('api.senha.cadastrar');
 Route::post('senhas/atualizar', [SenhaController::class, 'atualizar'])->name('api.senha.atualizar');
 Route::post('anexar/arquivos/{id}', [ArquivoController::class, 'anexarArquivos'])->name('api.arquivo.anexarArquivos');

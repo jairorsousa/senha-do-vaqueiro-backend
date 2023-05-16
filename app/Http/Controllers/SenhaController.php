@@ -63,6 +63,19 @@ class SenhaController extends Controller
             }
         }
 
+        //VALORES CATEGORIA CM
+        if ($request['idVaquejada'] == 69) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 810;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 460;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 510;
+            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
+                $valor = 310;
+            }
+        }
+
         if(!$request['desconto']){
             $request['desconto'] = 0;
         }else {
@@ -154,6 +167,19 @@ class SenhaController extends Controller
             }
         }
 
+        //VALORES CATEGORIA HARAS CM
+        if ($request['idVaquejada'] == 69) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 810;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 460;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 510;
+            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
+                $valor = 310;
+            }
+        }
+
         if(!$request['desconto']){
             $request['desconto'] = 0;
         }else {
@@ -196,4 +222,5 @@ class SenhaController extends Controller
         $senhas = DB::select("select * from va_vaqueiro where idVaquejada = {$request['idVaquejada']}");
         return $this->sendResponse($senhas);
     }
+
 }
