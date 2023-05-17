@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Senha;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 
 class SenhaController extends Controller
 {
@@ -221,6 +222,22 @@ class SenhaController extends Controller
             ->update($Dados);
         $senhas = DB::select("select * from va_vaqueiro where idVaquejada = {$request['idVaquejada']}");
         return $this->sendResponse($senhas);
+    }
+
+    public function notificacao(Request $request)
+    {
+        $Dados = [
+            'userId' => $request['userId'],
+            'titulo' => $request['titulo'],
+            'descricao' => $request['descricao'],
+            'setor' => $request['setor'],
+            'os_id' => $request['setor'],
+        ];
+
+        $response = Http::post('http://192.168.254.204:9000/rota', $Dados);
+        $response->body();
+
+
     }
 
 }
