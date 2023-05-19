@@ -74,6 +74,8 @@ class SenhaController extends Controller
                 $valor = 510;
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
                 $valor = 310;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 150;
             }
         }
 
@@ -178,6 +180,8 @@ class SenhaController extends Controller
                 $valor = 510;
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
                 $valor = 310;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 150;
             }
         }
 
