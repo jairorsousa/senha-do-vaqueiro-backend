@@ -79,6 +79,36 @@ class SenhaController extends Controller
             }
         }
 
+        //VALORES GUALBERTO
+        if ($request['idVaquejada'] == 64) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 2650;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 650;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 1650;
+            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 200;
+            }
+        }
+
+        //VALORES AGRIBISPO
+        if ($request['idVaquejada'] == 65) {
+            if($request['categoria'] == 'ABERTA') {
+                $valor = 1250;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 550;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 750;
+            }else if ($request['categoria'] == 'ASPIRANTE REGIONAL') {
+                $valor = 200;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 200;
+            }
+        }
+
         if(!$request['desconto']){
             $request['desconto'] = 0;
         }else {
@@ -182,6 +212,36 @@ class SenhaController extends Controller
                 $valor = 310;
             }else if ($request['categoria'] == 'FEMININO') {
                 $valor = 150;
+            }
+        }
+
+        //VALORES GUALBERTO
+        if ($request['idVaquejada'] == 64) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 2650;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 650;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 1650;
+            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 200;
+            }
+        }
+
+        //VALORES AGRIBISPO
+        if ($request['idVaquejada'] == 65) {
+            if($request['categoria'] == 'ABERTA') {
+                $valor = 1250;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 550;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 750;
+            }else if ($request['categoria'] == 'ASPIRANTE REGIONAL') {
+                $valor = 200;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 200;
             }
         }
 
