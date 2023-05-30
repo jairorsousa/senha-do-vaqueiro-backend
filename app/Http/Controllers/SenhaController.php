@@ -109,6 +109,19 @@ class SenhaController extends Controller
             }
         }
 
+        //VALORES SAO FRANCISCO DO BREJAO
+        if ($request['idVaquejada'] == 70) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 1660;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 860;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 1260;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 0;
+            }
+        }
+
         if(!$request['desconto']){
             $request['desconto'] = 0;
         }else {
@@ -227,6 +240,19 @@ class SenhaController extends Controller
                 $valor = 300;
             }else if ($request['categoria'] == 'FEMININO') {
                 $valor = 200;
+            }
+        }
+
+        //VALORES SAO FRANCISCO DO BREJAO
+        if ($request['idVaquejada'] == 70) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 1660;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 860;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 1260;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 0;
             }
         }
 
