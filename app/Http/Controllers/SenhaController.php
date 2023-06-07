@@ -97,11 +97,11 @@ class SenhaController extends Controller
         //VALORES AGRIBISPO
         if ($request['idVaquejada'] == 65) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 1250;
+                $valor = 1300;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 550;
+                $valor = 600;
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 750;
+                $valor = 800;
             }else if ($request['categoria'] == 'ASPIRANTE REGIONAL') {
                 $valor = 200;
             }else if ($request['categoria'] == 'FEMININO') {
@@ -259,11 +259,11 @@ class SenhaController extends Controller
         //VALORES AGRIBISPO
         if ($request['idVaquejada'] == 65) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 1250;
+                $valor = 1300;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 550;
+                $valor = 600;
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 750;
+                $valor = 800;
             }else if ($request['categoria'] == 'ASPIRANTE REGIONAL') {
                 $valor = 200;
             }else if ($request['categoria'] == 'FEMININO') {
