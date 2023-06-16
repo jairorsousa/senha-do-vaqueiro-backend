@@ -79,18 +79,18 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES GUALBERTO
-        if ($request['idVaquejada'] == 64) {
+        //VALORES JG
+        if ($request['idVaquejada'] == 66) {
             if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 2650;
+                $valor = 1850;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 650;
+                $valor = 850;
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 1650;
+                $valor = 1550;
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
-                $valor = 300;
+                $valor = 450;
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 200;
+                $valor = 300;
             }
         }
 
@@ -228,18 +228,18 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES GUALBERTO
-        if ($request['idVaquejada'] == 64) {
+        //VALORES JG
+        if ($request['idVaquejada'] == 66) {
             if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 2650;
+                $valor = 1850;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 650;
+                $valor = 850;
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 1650;
+                $valor = 1550;
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
-                $valor = 300;
+                $valor = 450;
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 200;
+                $valor = 300;
             }
         }
 
