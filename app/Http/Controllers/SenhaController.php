@@ -79,18 +79,39 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES JG
-        if ($request['idVaquejada'] == 66) {
+        //VALORES ARTUR GONZAGA
+        if ($request['idVaquejada'] == 72) {
             if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 1850;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 850;
+                }else {
+                    $valor = 800;
+                }
+
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 850;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 400;
+                }else {
+                    $valor = 350;
+                }
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 1550;
-            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
-                $valor = 450;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 650;
+                }else {
+                    $valor = 600;
+                }
+            }else if ($request['categoria'] == 'INICIANTE LOCAL') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 350;
+                }else {
+                    $valor = 300;
+                }
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 300;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 150;
+                }else {
+                    $valor = 100;
+                }
             }
         }
 
@@ -109,16 +130,16 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES SAO FRANCISCO DO BREJAO
-        if ($request['idVaquejada'] == 70) {
-            if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 1660;
+        //VALORES vitorino
+        if ($request['idVaquejada'] == 73) {
+            if($request['categoria'] == 'ABERTA') {
+                $valor = 1000;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 860;
+                $valor = 800;
             }else if ($request['categoria'] == 'AMADOR') {
                 $valor = 1260;
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 0;
+                $valor = 100;
             }
         }
 
@@ -189,6 +210,8 @@ class SenhaController extends Controller
             }
         }
 
+
+
         //VALORES CATEGORIA SAO PEDRO
         if ($request['idVaquejada'] == 62) {
             if($request['categoria'] == 'PROFISSIONAL') {
@@ -228,31 +251,52 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES JG
-        if ($request['idVaquejada'] == 66) {
+        //VALORES ARTUR GONZAGA
+        if ($request['idVaquejada'] == 72) {
             if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 1850;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 850;
+                }else {
+                    $valor = 800;
+                }
+
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 850;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 400;
+                }else {
+                    $valor = 350;
+                }
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 1550;
-            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
-                $valor = 450;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 650;
+                }else {
+                    $valor = 600;
+                }
+            }else if ($request['categoria'] == 'INICIANTE LOCAL') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 350;
+                }else {
+                    $valor = 300;
+                }
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 300;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 150;
+                }else {
+                    $valor = 100;
+                }
             }
         }
 
-        //VALORES SAO FRANCISCO DO BREJAO
-        if ($request['idVaquejada'] == 70) {
-            if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 1660;
+        //VALORES vitorino
+        if ($request['idVaquejada'] == 73) {
+            if($request['categoria'] == 'ABERTA') {
+                $valor = 1000;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 860;
+                $valor = 800;
             }else if ($request['categoria'] == 'AMADOR') {
                 $valor = 1260;
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 0;
+                $valor = 100;
             }
         }
 
