@@ -130,16 +130,27 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES vitorino
-        if ($request['idVaquejada'] == 73) {
-            if($request['categoria'] == 'ABERTA') {
-                $valor = 1000;
+        //VALORES santa loudees
+        if ($request['idVaquejada'] == 74) {
+            if($request['categoria'] == 'AMADOR') {
+                $valor = 1200;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 800;
-            }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 1260;
+                $valor = 650;
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 100;
+                $valor = 300;
+            }
+        }
+
+        //VALORES saO BENTO
+        if ($request['idVaquejada'] == 76) {
+            if($request['categoria'] == 'ABERTA') {
+                $valor = 650;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
+                $valor = 150;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 0;
             }
         }
 
@@ -287,16 +298,27 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES vitorino
-        if ($request['idVaquejada'] == 73) {
-            if($request['categoria'] == 'ABERTA') {
-                $valor = 1000;
+        //VALORES santa loudees
+        if ($request['idVaquejada'] == 74) {
+            if($request['categoria'] == 'AMADOR') {
+                $valor = 1200;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 800;
-            }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 1260;
+                $valor = 650;
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 100;
+                $valor = 300;
+            }
+        }
+
+        //VALORES saO BENTO
+        if ($request['idVaquejada'] == 76) {
+            if($request['categoria'] == 'ABERTA') {
+                $valor = 650;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
+                $valor = 150;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 0;
             }
         }
 
