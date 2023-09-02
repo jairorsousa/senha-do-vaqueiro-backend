@@ -115,16 +115,14 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES AGRIBISPO
-        if ($request['idVaquejada'] == 65) {
-            if($request['categoria'] == 'ABERTA') {
-                $valor = 1300;
+        // velho jorge
+        if ($request['idVaquejada'] == 75) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 2650;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 600;
+                $valor = 850;
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 800;
-            }else if ($request['categoria'] == 'ASPIRANTE REGIONAL') {
-                $valor = 200;
+                $valor = 1650;
             }else if ($request['categoria'] == 'FEMININO') {
                 $valor = 200;
             }
@@ -212,55 +210,20 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES CATEGORIA BARONESA
-        if ($request['idVaquejada'] == 68) {
-            if($request['categoria'] == 'FEMININO') {
-                $valor = 100;
-            }else {
-                $valor = 500;
-            }
-        }
 
-
-
-        //VALORES CATEGORIA SAO PEDRO
-        if ($request['idVaquejada'] == 62) {
+        //VALORES velhor jorge
+        if ($request['idVaquejada'] == 75) {
             if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 700;
+                $valor = 2650;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 300;
+                $valor = 850;
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 500;
-            }
-        }
-
-        //VALORES CATEGORIA LUIZ GONZAGA
-        if ($request['idVaquejada'] == 67) {
-            if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 900;
-            }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 300;
-            }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 750;
+                $valor = 1650;
             }else if ($request['categoria'] == 'FEMININO') {
                 $valor = 200;
             }
         }
 
-        //VALORES CATEGORIA HARAS CM
-        if ($request['idVaquejada'] == 69) {
-            if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 810;
-            }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 460;
-            }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 510;
-            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
-                $valor = 310;
-            }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 150;
-            }
-        }
 
         //VALORES ARTUR GONZAGA
         if ($request['idVaquejada'] == 72) {
@@ -322,20 +285,6 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES AGRIBISPO
-        if ($request['idVaquejada'] == 65) {
-            if($request['categoria'] == 'ABERTA') {
-                $valor = 1300;
-            }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 600;
-            }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 800;
-            }else if ($request['categoria'] == 'ASPIRANTE REGIONAL') {
-                $valor = 200;
-            }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 200;
-            }
-        }
 
         if(!$request['desconto']){
             $request['desconto'] = 0;
