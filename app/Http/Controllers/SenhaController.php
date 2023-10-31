@@ -51,6 +51,41 @@ class SenhaController extends Controller
             }
         }
 
+        //VALORES PEZAO
+        if ($request['idVaquejada'] == 77) {
+            if($request['categoria'] == 'ABERTA') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 500;
+                }else {
+                    $valor = 450;
+                }
+
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 400;
+                }else {
+                    $valor = 350;
+                }
+            }else if ($request['categoria'] == 'AMADOR') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 650;
+                }else {
+                    $valor = 600;
+                }
+            }else if ($request['categoria'] == 'INICIANTE LOCAL') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 350;
+                }else {
+                    $valor = 300;
+                }
+            }else if ($request['categoria'] == 'FEMININO') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 150;
+                }else {
+                    $valor = 100;
+                }
+            }
+        }
         //VALORES CATEGORIA LUIZ GONZAGA
         if ($request['idVaquejada'] == 67) {
             if($request['categoria'] == 'PROFISSIONAL') {
@@ -225,13 +260,13 @@ class SenhaController extends Controller
         }
 
 
-        //VALORES ARTUR GONZAGA
-        if ($request['idVaquejada'] == 72) {
-            if($request['categoria'] == 'PROFISSIONAL') {
+        //VALORES PEZAO
+        if ($request['idVaquejada'] == 77) {
+            if($request['categoria'] == 'ABERTA') {
                 if($request['boitv'] == 'SIM') {
-                    $valor = 850;
+                    $valor = 500;
                 }else {
-                    $valor = 800;
+                    $valor = 450;
                 }
 
             }else if ($request['categoria'] == 'ASPIRANTE') {
