@@ -163,14 +163,16 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES santa loudees
-        if ($request['idVaquejada'] == 74) {
-            if($request['categoria'] == 'AMADOR') {
-                $valor = 1200;
+        //VALORES parambu
+        if ($request['idVaquejada'] == 78) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 800;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 650;
+                $valor = 350;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 800;
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 300;
+                $valor = 250;
             }
         }
 
@@ -246,16 +248,16 @@ class SenhaController extends Controller
         }
 
 
-        //VALORES velhor jorge
-        if ($request['idVaquejada'] == 75) {
+        //VALORES parambu
+        if ($request['idVaquejada'] == 78) {
             if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 2650;
+                $valor = 800;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 850;
+                $valor = 350;
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 1650;
+                $valor = 800;
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 200;
+                $valor = 250;
             }
         }
 
