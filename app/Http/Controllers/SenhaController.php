@@ -51,6 +51,19 @@ class SenhaController extends Controller
             }
         }
 
+        //VALORES TROPA DE ELITE
+        if ($request['idVaquejada'] == 79) {
+            if($request['categoria'] == 'ABERTA') {
+                $valor = 500;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
+                $valor = 150;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 0;
+            }
+        }
+
         //VALORES PEZAO
         if ($request['idVaquejada'] == 77) {
             if($request['categoria'] == 'ABERTA') {
@@ -309,10 +322,10 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES saO BENTO
-        if ($request['idVaquejada'] == 76) {
+        //VALORES TROPA DE ELITE
+        if ($request['idVaquejada'] == 79) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 650;
+                $valor = 500;
             }else if ($request['categoria'] == 'ASPIRANTE') {
                 $valor = 300;
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
