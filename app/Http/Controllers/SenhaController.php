@@ -189,12 +189,12 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES saO BENTO
-        if ($request['idVaquejada'] == 76) {
+        //VALORES arena tetei
+        if ($request['idVaquejada'] == 80) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 650;
+                $valor = 1000;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 300;
+                $valor = 500;
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
                 $valor = 150;
             }else if ($request['categoria'] == 'FEMININO') {
@@ -322,12 +322,12 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES TROPA DE ELITE
-        if ($request['idVaquejada'] == 79) {
+        //VALORES arena tetei
+        if ($request['idVaquejada'] == 80) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 500;
+                $valor = 1000;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 300;
+                $valor = 500;
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
                 $valor = 150;
             }else if ($request['categoria'] == 'FEMININO') {
