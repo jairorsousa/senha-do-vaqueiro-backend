@@ -190,11 +190,11 @@ class SenhaController extends Controller
         }
 
         //VALORES arena tetei
-        if ($request['idVaquejada'] == 80) {
+        if ($request['idVaquejada'] == 82) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 1000;
+                $valor = 1050;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 500;
+                $valor = 550;
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
                 $valor = 150;
             }else if ($request['categoria'] == 'FEMININO') {
@@ -323,11 +323,11 @@ class SenhaController extends Controller
         }
 
         //VALORES arena tetei
-        if ($request['idVaquejada'] == 80) {
+        if ($request['idVaquejada'] == 82) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 1000;
+                $valor = 1050;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 500;
+                $valor = 550;
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
                 $valor = 150;
             }else if ($request['categoria'] == 'FEMININO') {
