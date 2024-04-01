@@ -176,16 +176,40 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES parambu
-        if ($request['idVaquejada'] == 78) {
+        //VALORES santino alvez
+        if ($request['idVaquejada'] == 81) {
             if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 800;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 950;
+                }else {
+                    $valor = 900;
+                }
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 350;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 950;
+                }else {
+                    $valor = 900;
+                }
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 800;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 950;
+                }else {
+                    $valor = 900;
+                }
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 250;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 550;
+                }else {
+                    $valor = 500;
+                }
+            }else if ($request['categoria'] == 'EXTRA PATRAO AMADOR') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 950;
+                }else {
+                    $valor = 900;
+                }
+            }else if ($request['categoria'] == 'X30') {
+                    $valor = 2000;
             }
         }
 
@@ -274,7 +298,42 @@ class SenhaController extends Controller
             }
         }
 
-
+        //VALORES santino alvez
+        if ($request['idVaquejada'] == 81) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 950;
+                }else {
+                    $valor = 900;
+                }
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 950;
+                }else {
+                    $valor = 900;
+                }
+            }else if ($request['categoria'] == 'AMADOR') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 950;
+                }else {
+                    $valor = 900;
+                }
+            }else if ($request['categoria'] == 'FEMININO') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 550;
+                }else {
+                    $valor = 500;
+                }
+            }else if ($request['categoria'] == 'EXTRA PATRAO AMADOR') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 950;
+                }else {
+                    $valor = 900;
+                }
+            }else if ($request['categoria'] == 'X30') {
+                $valor = 2000;
+            }
+        }
         //VALORES PEZAO
         if ($request['idVaquejada'] == 77) {
             if($request['categoria'] == 'ABERTA') {
