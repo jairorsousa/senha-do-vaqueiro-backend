@@ -202,7 +202,7 @@ class SenhaController extends Controller
                 }else {
                     $valor = 500;
                 }
-            }else if ($request['categoria'] == 'EXTRA PATRAO AMADOR') {
+            }else if ($request['categoria'] == 'EXTRA AMADOR PATRAO') {
                 if($request['boitv'] == 'SIM') {
                     $valor = 950;
                 }else {
@@ -324,7 +324,7 @@ class SenhaController extends Controller
                 }else {
                     $valor = 500;
                 }
-            }else if ($request['categoria'] == 'EXTRA PATRAO AMADOR') {
+            }else if ($request['categoria'] == 'EXTRA AMADOR PATRAO') {
                 if($request['boitv'] == 'SIM') {
                     $valor = 950;
                 }else {
