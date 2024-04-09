@@ -176,40 +176,38 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES santino alvez
-        if ($request['idVaquejada'] == 81) {
+        //VALORES ZEPENA
+        if ($request['idVaquejada'] == 83) {
             if($request['categoria'] == 'PROFISSIONAL') {
                 if($request['boitv'] == 'SIM') {
-                    $valor = 950;
+                    $valor = 1050;
                 }else {
-                    $valor = 900;
+                    $valor = 1000;
                 }
             }else if ($request['categoria'] == 'ASPIRANTE') {
                 if($request['boitv'] == 'SIM') {
-                    $valor = 950;
+                    $valor = 350;
                 }else {
-                    $valor = 900;
+                    $valor = 300;
                 }
             }else if ($request['categoria'] == 'AMADOR') {
                 if($request['boitv'] == 'SIM') {
-                    $valor = 950;
+                    $valor = 850;
                 }else {
-                    $valor = 900;
+                    $valor = 800;
                 }
             }else if ($request['categoria'] == 'FEMININO') {
                 if($request['boitv'] == 'SIM') {
-                    $valor = 550;
+                    $valor = 300;
                 }else {
-                    $valor = 500;
+                    $valor = 350;
                 }
-            }else if ($request['categoria'] == 'EXTRA AMADOR PATRAO') {
+            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
                 if($request['boitv'] == 'SIM') {
-                    $valor = 950;
+                    $valor = 250;
                 }else {
-                    $valor = 900;
+                    $valor = 300;
                 }
-            }else if ($request['categoria'] == 'X30') {
-                    $valor = 2000;
             }
         }
 
@@ -285,16 +283,38 @@ class SenhaController extends Controller
         }
 
 
-        //VALORES parambu
-        if ($request['idVaquejada'] == 78) {
+        //VALORES ZEPENA
+        if ($request['idVaquejada'] == 83) {
             if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 800;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 1050;
+                }else {
+                    $valor = 1000;
+                }
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 350;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 350;
+                }else {
+                    $valor = 300;
+                }
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 800;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 850;
+                }else {
+                    $valor = 800;
+                }
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 250;
+                if($request['boitv'] == 'SIM') {
+                    $valor = 300;
+                }else {
+                    $valor = 350;
+                }
+            }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
+                if($request['boitv'] == 'SIM') {
+                    $valor = 250;
+                }else {
+                    $valor = 300;
+                }
             }
         }
 
