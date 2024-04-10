@@ -311,9 +311,9 @@ class SenhaController extends Controller
                 }
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
                 if($request['boitv'] == 'SIM') {
-                    $valor = 250;
-                }else {
                     $valor = 300;
+                }else {
+                    $valor = 250;
                 }
             }
         }
