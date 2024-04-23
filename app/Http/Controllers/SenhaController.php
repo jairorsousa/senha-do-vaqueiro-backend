@@ -51,12 +51,12 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES TROPA DE ELITE
-        if ($request['idVaquejada'] == 79) {
+        //VALORES sales junior
+        if ($request['idVaquejada'] == 84) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 500;
+                $valor = 750;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 300;
+                $valor = 500;
             }else if ($request['categoria'] == 'ASPIRANTE LIGHT') {
                 $valor = 150;
             }else if ($request['categoria'] == 'FEMININO') {
@@ -390,12 +390,12 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES santa loudees
-        if ($request['idVaquejada'] == 74) {
-            if($request['categoria'] == 'AMADOR') {
-                $valor = 1200;
+        //VALORES sales junior
+        if ($request['idVaquejada'] == 84) {
+            if($request['categoria'] == 'ABERTA') {
+                $valor = 750;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 650;
+                $valor = 500;
             }else if ($request['categoria'] == 'FEMININO') {
                 $valor = 300;
             }
