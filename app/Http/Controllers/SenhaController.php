@@ -40,14 +40,24 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES CATEGORIA SAO PEDRO
-        if ($request['idVaquejada'] == 62) {
+        //VALORES CATEGORIA chico oliveira
+        if ($request['idVaquejada'] == 90) {
             if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 700;
-            }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 300;
+                $valor = 2500;
+            }else if ($request['categoria'] == 'PROFISSIONAL EXTRA') {
+                $valor = 1500;
             }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 1500;
+            }else if ($request['categoria'] == 'AMADOR EXTRA') {
+                $valor = 1000;
+            }else if ($request['categoria'] == 'ASP. REGIONAL') {
                 $valor = 500;
+            }else if ($request['categoria'] == 'ASP. REGIONAL EXTRA') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'TROPA DE ELITE') {
+                $valor = 2000;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 200;
             }
         }
 
@@ -109,6 +119,20 @@ class SenhaController extends Controller
                 $valor = 750;
             }else if ($request['categoria'] == 'FEMININO') {
                 $valor = 200;
+            }
+        }
+        //VALORES so francisco do brejao
+        if ($request['idVaquejada'] == 92) {
+            if($request['categoria'] == 'ABERTA') {
+                $valor = 2260;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 1100;
+            }else if ($request['categoria'] == 'ASPIRANTE LIGTH') {
+                $valor = 400;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 0;
+            }else if ($request['categoria'] == 'MIRIM') {
+                $valor = 0;
             }
         }
 
@@ -282,6 +306,26 @@ class SenhaController extends Controller
             }
         }
 
+        //VALORES CATEGORIA chico oliveira
+        if ($request['idVaquejada'] == 90) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 2500;
+            }else if ($request['categoria'] == 'PROFISSIONAL EXTRA') {
+                $valor = 1500;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 1500;
+            }else if ($request['categoria'] == 'AMADOR EXTRA') {
+                $valor = 1000;
+            }else if ($request['categoria'] == 'ASP. REGIONAL') {
+                $valor = 500;
+            }else if ($request['categoria'] == 'ASP. REGIONAL EXTRA') {
+                $valor = 300;
+            }else if ($request['categoria'] == 'TROPA DE ELITE') {
+                $valor = 2000;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 200;
+            }
+        }
 
         //VALORES ZEPENA
         if ($request['idVaquejada'] == 83) {
@@ -390,14 +434,18 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES sales junior
-        if ($request['idVaquejada'] == 84) {
+        //VALORES so francisco do brejao
+        if ($request['idVaquejada'] == 92) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 750;
+                $valor = 2260;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 500;
+                $valor = 1100;
+            }else if ($request['categoria'] == 'ASPIRANTE LIGTH') {
+                $valor = 400;
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 300;
+                $valor = 0;
+            }else if ($request['categoria'] == 'MIRIM') {
+                $valor = 0;
             }
         }
 
