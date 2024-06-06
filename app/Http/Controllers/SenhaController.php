@@ -15,6 +15,23 @@ class SenhaController extends Controller
         $senhas = DB::select("select * from va_vaqueiro where idVaquejada = {$id}");
         return $this->sendResponse($senhas);
     }
+    public function getSenha2($id,$categoria)
+    {
+        $categoria  = str_replace('-', ' ', $categoria);
+        if($categoria == 'AMADOR' || $categoria == 'PROFISSIONAL'){
+            $categoria = "('AMADOR', 'PROFISSIONAL')";
+        }else if($categoria == 'ASP. REGIONAL'){
+            $categoria = "('ASP. REGIONAL')";
+        }else if ($categoria == 'PROFISSIONAL EXTRA' || $categoria == 'ASP. REGIONAL EXTRA' || $categoria == 'AMADOR EXTRA'){
+            $categoria = "('AMADOR EXTRA', 'PROFISSIONAL EXTRA', 'ASP. REGIONAL EXTRA')";
+        }else if ($categoria == 'FEMININO') {
+            $categoria = "('FEMININO')";
+        }else if ($categoria == 'TROPA DE ELITE') {
+            $categoria = "('TROPA DE ELITE')";
+        }
+        $senhas = DB::select("select * from va_vaqueiro where idVaquejada = {$id} and categoria in {$categoria}");
+        return $this->sendResponse($senhas);
+    }
     public function cadastrar(Request $request)
     {
         $pos = strpos( $request['senha'], '-' );
