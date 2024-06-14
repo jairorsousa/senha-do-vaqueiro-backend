@@ -57,24 +57,16 @@ class SenhaController extends Controller
             }
         }
 
-        //VALORES CATEGORIA chico oliveira
-        if ($request['idVaquejada'] == 90) {
+        //VALORES PARQUE VELHO JORGE
+        if ($request['idVaquejada'] == 93) {
             if($request['categoria'] == 'PROFISSIONAL') {
-                $valor = 2500;
-            }else if ($request['categoria'] == 'PROFISSIONAL EXTRA') {
-                $valor = 1500;
+                $valor = 1300;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 400;
             }else if ($request['categoria'] == 'AMADOR') {
-                $valor = 1500;
-            }else if ($request['categoria'] == 'AMADOR EXTRA') {
-                $valor = 1000;
-            }else if ($request['categoria'] == 'ASP. REGIONAL') {
-                $valor = 500;
-            }else if ($request['categoria'] == 'ASP. REGIONAL EXTRA') {
-                $valor = 300;
-            }else if ($request['categoria'] == 'TROPA DE ELITE') {
-                $valor = 2000;
+                $valor = 800;
             }else if ($request['categoria'] == 'FEMININO') {
-                $valor = 200;
+                $valor = 100;
             }
         }
 
@@ -141,9 +133,9 @@ class SenhaController extends Controller
         //VALORES so francisco do brejao
         if ($request['idVaquejada'] == 92) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 2260;
+                $valor = 1800;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 1100;
+                $valor = 900;
             }else if ($request['categoria'] == 'ASPIRANTE LIGTH') {
                 $valor = 400;
             }else if ($request['categoria'] == 'FEMININO') {
@@ -454,15 +446,27 @@ class SenhaController extends Controller
         //VALORES so francisco do brejao
         if ($request['idVaquejada'] == 92) {
             if($request['categoria'] == 'ABERTA') {
-                $valor = 2260;
+                $valor = 1800;
             }else if ($request['categoria'] == 'ASPIRANTE') {
-                $valor = 1100;
+                $valor = 900;
             }else if ($request['categoria'] == 'ASPIRANTE LIGTH') {
                 $valor = 400;
             }else if ($request['categoria'] == 'FEMININO') {
                 $valor = 0;
             }else if ($request['categoria'] == 'MIRIM') {
                 $valor = 0;
+            }
+        }
+        //VALORES PARQUE VELHO JORGE
+        if ($request['idVaquejada'] == 93) {
+            if($request['categoria'] == 'PROFISSIONAL') {
+                $valor = 1300;
+            }else if ($request['categoria'] == 'ASPIRANTE') {
+                $valor = 400;
+            }else if ($request['categoria'] == 'AMADOR') {
+                $valor = 800;
+            }else if ($request['categoria'] == 'FEMININO') {
+                $valor = 100;
             }
         }
 
